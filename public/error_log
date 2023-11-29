@@ -1,0 +1,53 @@
+[11-Aug-2023 02:09:52 UTC] PHP Warning:  require(/home/citechno/public_html/CA/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/citechno/public_html/CA/vendor/composer/autoload_real.php on line 41
+[11-Aug-2023 02:09:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citechno/public_html/CA/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/citechno/public_html/CA/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/citechno/public_html/CA/vendor/composer/autoload_real.php(45): ComposerAutoloaderInit3a05f15578afeb82c38e929950974b2c::{closure}('a4a119a56e50fbb...', '/home/citechno/...')
+#1 /home/citechno/public_html/CA/vendor/autoload.php(25): ComposerAutoloaderInit3a05f15578afeb82c38e929950974b2c::getLoader()
+#2 /home/citechno/public_html/CA/system/Autoloader/Autoloader.php(119): include('/home/citechno/...')
+#3 /home/citechno/public_html/CA/system/Autoloader/Autoloader.php(108): CodeIgniter\Autoloader\Autoloader->loadComposerInfo(Object(Config\Modules))
+#4 /home/citechno/public_html/CA/system/bootstrap.php(105): CodeIgniter\Autoloader\Autoloader->initialize(Object(Config\Autoload), Object(Config\Modules))
+#5 /home/citechno/public_html/CA/public/index.php(38): require('/home/citechno/...')
+#6 {main}
+  thrown in /home/citechno/public_html/CA/vendor/composer/autoload_real.php on line 41
+[11-Aug-2023 07:07:41 America/Chicago] PHP Fatal error:  Cannot redeclare App\Modules\Admin\Controllers\Dashboard::index() in /home/citechno/public_html/CA/app/Modules/Admin/Controllers/Dashboard.php on line 37
+[14-Aug-2023 01:16:33 America/Chicago] PHP Fatal error:  Cannot redeclare App\Modules\Admin\Controllers\Notes::add_note() in /home/citechno/public_html/CA/app/Modules/Admin/Controllers/Notes.php on line 72
+[11-Sep-2023 12:55:43 Asia/kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "CodeIgniter\Log\CI_DEBUG" in /home/citechno/public_html/BDC/system/Log/Logger.php:119
+Stack trace:
+#0 /home/citechno/public_html/BDC/system/Config/Services.php(391): CodeIgniter\Log\Logger->__construct(Object(Config\Logger))
+#1 /home/citechno/public_html/BDC/system/Config/BaseService.php(253): CodeIgniter\Config\Services::logger(false)
+#2 /home/citechno/public_html/BDC/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('logger', Array)
+#3 /home/citechno/public_html/BDC/system/Config/Services.php(388): CodeIgniter\Config\BaseService::getSharedInstance('logger')
+#4 /home/citechno/public_html/BDC/system/Config/BaseService.php(253): CodeIgniter\Config\Services::logger(true)
+#5 /home/citechno/public_html/BDC/system/Common.php(799): CodeIgniter\Config\BaseService::__callStatic('logger', Array)
+#6 /home/citechno/public_html/BDC/system/Debug/Exceptions.php(114): log_message('critical', '{message}\nin {e...', Array)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown in /home/citechno/public_html/BDC/system/Log/Logger.php on line 119
+[12-Sep-2023 18:31:14 Asia/kolkata] PHP Fatal error:  Cannot redeclare App\Modules\Admin\Models\VendorModel::export_csv() in /home/citechno/public_html/BDC/app/Modules/Admin/Models/VendorModel.php on line 204
+[12-Sep-2023 13:35:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "Config\APP_NAMESPACE" in /home/citechno/public_html/BDC/system/bootstrap.php:105
+Stack trace:
+#0 /home/citechno/public_html/BDC/public/index.php(38): require()
+#1 {main}
+  thrown in /home/citechno/public_html/BDC/system/bootstrap.php on line 105
+[13-Sep-2023 11:11:41 Asia/kolkata] PHP Fatal error:  Cannot declare class App\Modules\Admin\Controllers\CompanyProfile because the name is already in use in /home/citechno/public_html/BDC/app/Modules/Admin/Controllers/CompanyProfile.php on line 6
+[13-Sep-2023 11:19:14 Asia/kolkata] PHP Fatal error:  Cannot declare class App\Modules\Admin\Controllers\CompanyProfile because the name is already in use in /home/citechno/public_html/BDC/app/Modules/Admin/Controllers/CompanyProfile.php on line 6
+[19-Sep-2023 10:50:18 Asia/kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "CodeIgniter\Log\CI_DEBUG" in /home/citechno/public_html/BDC/system/Log/Logger.php:119
+Stack trace:
+#0 /home/citechno/public_html/BDC/system/Config/Services.php(391): CodeIgniter\Log\Logger->__construct(Object(Config\Logger))
+#1 /home/citechno/public_html/BDC/system/Config/BaseService.php(253): CodeIgniter\Config\Services::logger(false)
+#2 /home/citechno/public_html/BDC/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('logger', Array)
+#3 /home/citechno/public_html/BDC/system/Config/Services.php(388): CodeIgniter\Config\BaseService::getSharedInstance('logger')
+#4 /home/citechno/public_html/BDC/system/Config/BaseService.php(253): CodeIgniter\Config\Services::logger(true)
+#5 /home/citechno/public_html/BDC/system/Common.php(799): CodeIgniter\Config\BaseService::__callStatic('logger', Array)
+#6 /home/citechno/public_html/BDC/system/Debug/Exceptions.php(114): log_message('critical', '{message}\nin {e...', Array)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown in /home/citechno/public_html/BDC/system/Log/Logger.php on line 119
+[09-Oct-2023 17:44:36 Asia/kolkata] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/citechno/public_html/BDC/app/Modules/Admin/Models/ReceivedPaymentModel.php on line 3
+[23-Oct-2023 15:25:37 Asia/kolkata] PHP Fatal error:  Cannot use empty array elements in arrays in /home/citechno/public_html/BDC/app/Modules/Admin/Controllers/ProjectItem.php on line 83
+[31-Oct-2023 11:06:58 Asia/kolkata] PHP Fatal error:  Cannot redeclare App\Modules\Admin\Models\ProjectDocModel::total_records_count() in /home/citechno/public_html/BDC/app/Modules/Admin/Models/ProjectDocModel.php on line 63
+[06-Nov-2023 14:43:33 Asia/kolkata] PHP Fatal error:  Can't use method return value in write context in /home/citechno/public_html/BDC/app/Modules/Admin/Models/ChallanModel.php on line 213
+[06-Nov-2023 14:43:40 Asia/kolkata] PHP Fatal error:  Can't use method return value in write context in /home/citechno/public_html/BDC/app/Modules/Admin/Models/ChallanModel.php on line 213
+[17-Nov-2023 16:45:45 Asia/kolkata] PHP Fatal error:  Cannot redeclare App\Modules\Api\Controllers\Supervisor::insertChallanReocde() in /home/citechno/public_html/BDC/app/Modules/Api/Controllers/Supervisor.php on line 133
+[17-Nov-2023 16:49:29 Asia/kolkata] PHP Fatal error:  Cannot redeclare App\Modules\Api\Controllers\Supervisor::insertChallanReocde() in /home/citechno/public_html/BDC/app/Modules/Api/Controllers/Supervisor.php on line 133
+[28-Nov-2023 18:39:13 Asia/kolkata] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/citechno/public_html/BDC/app/Modules/Admin/Controllers/Project.php on line 280
